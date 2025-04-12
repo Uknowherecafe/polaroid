@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角色拍貼機</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>角色拍貼機 DEMO</h1>
+  <div>
+    <label>選擇邊框：
+      <select id="frameSelect">
+        <option value="frame1.png">邊框一</option>
+        <option value="frame2.png">邊框二</option>
+        <option value="frame3.png">邊框三</option>
+      </select>
+    </label>
+    <label>選擇濾鏡：
+      <select id="filterSelect">
+        <option value="none">無濾鏡</option>
+        <option value="nc">NC 自然柔和</option>
+        <option value="cc">CC 復古色調</option>
+      </select>
+    </label>
+  </div>
+  <video id="video" autoplay></video>
+  <button onclick="startCountdown()">拍照</button>
+  <div id="countdown"></div>
+  <canvas id="canvas"></canvas>
+  <div id="preview"></div>
+  <button onclick="downloadImage()">下載圖片</button>
+  <script src="script.js"></script>
+</body>
+</html>
