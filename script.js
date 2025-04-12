@@ -23,7 +23,7 @@ filterSelect.addEventListener('change', () => {
 });
 
 function startCountdown() {
-  let count = 5;
+  let count = 3;
   countdown.innerText = count;
   const interval = setInterval(() => {
     count--;
